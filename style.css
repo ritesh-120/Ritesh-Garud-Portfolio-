@@ -819,6 +819,9 @@ font-size: 17px;
 .education h1{
   margin-top: 20px;
 }
+.education .heading{
+  font-size: px;
+}
 .education h1 span{
   color: rgb(115, 3, 167);
 }
@@ -905,6 +908,7 @@ font-size: 17px;
   .education .box-container .box {
     flex-direction: column;
     width: 100%;
+    margin-left: 3px;
   }
   .education .box-container .box .image {
     width: 100%;
@@ -931,8 +935,162 @@ font-size: 17px;
 /* education media queries ends*/
 /* education section ends */
 
+/* work section starts*/
+.work{
+  background: #dce1e2;
+  width: 1280px;
+  height: 610px;
+  color: #0e2431;
+  margin-top: 30px;
+}
+
+.heading{
+  /* background-color: #1a047e; */
+  font-size: 27px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.heading span{
+  color: rgb(115, 3, 167);
+}
+
+.box{
+  width: 100%;
+  height: 87%;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+}
+
+.box .box1{
+  text-align: center;
+  background: #d3bdb1;
+  height: 360px;
+  width: 250px;
+  border-radius: 20px;
+  margin-left: 90px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.box .box1:hover{
+  transform: scale(1.03);
+  /* background: #fff; */
+  box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+}
+
+.box #box1{
+  margin-left: -20px;
+}
+
+.box .box1 img{
+  margin-top: 14px;
+  margin-bottom: 10px;
+  height: 45%;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.box .box1 h2{
+  font-size: 22px;
+}
+
+.box .box1 p{
+  font-size: 15px;
+  margin: 5px 8px;
+}
+
+.box .box1 .btn {
+  margin-left: -40px;
+  margin-top: 1rem;
+  position: absolute;
+  line-height: 0;
+  padding: 1.3rem 1.8rem;
+  border-radius: 4em;
+  transition: 0.5s;
+  /* color: #fff; */
+  color: #dce1e2;
+  background:  #0e2431;
+  /* background: #fff; */
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  font-family: "Nunito", sans-serif;
+  margin-left: -50px;
+}
+
+.box .box1 .btn span {
+  font-weight: 650;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  padding-top: 60px;
+}
+.box .box1 .btn i {
+  margin-left: 0.1rem;
+  font-size: 1.6rem;
+  transition: 0.3s;
+}
+.box .box1 .btn:hover {
+  background:  #dce1e2;
+  color: #0e2431;
+  padding: 1.3rem 1.9rem;
+}
+.box .box1 .btn:hover i{
+  transform: translateX(5px);
+}
 
 
+/* Media Queries Start */
+
+@media (max-width: 500px){
+
+  .work{
+    height: auto;
+    width: auto;
+    color: #0e2431;
+  }
+  .heading{
+    font-size: 17px;
+    width: auto;
+    height: auto;
+  }
+  .box{
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -90px;
+  }
+  .box1{
+    margin-top: 40px;
+  }
+  .box .box1{
+    height: 330px;
+    width: 230px;
+  }
+  .box #box1{
+    margin-left: 87px;
+  }
+  .box .box1 h2{
+    font-size: 19px;
+  }
+  .box .box1 p{
+    font-size: 13px;
+    margin: 5px 8px;
+  }
+  .box .box1 .btn{
+    padding: 1.2rem 1.4rem;
+    font-weight: 500;
+    margin-left: -40px;
+  }
+
+}
+/* work media queries ends*/
+/* work section ends */
 
 
 
@@ -943,6 +1101,9 @@ font-size: 17px;
 .contact {
   background: #dce1e2;
   min-height: 60vh;
+}
+.contact .heading{
+  font-size: 40px;
 }
 .contact .container {
   max-width: 1050px;
@@ -1107,6 +1268,7 @@ form .button-area {
 
 /* footer section starts */
 section {
+  /* height: 600px; */
   min-height: 100vh;
   padding: 2rem 9%;
 }
@@ -1118,23 +1280,27 @@ section {
 }
 .footer .box-container {
   display: flex;
+  /* flex-direction: row; */
   justify-content: center;
   flex-wrap: wrap;
 }
 .footer .box-container .box {
   flex: 1 1 25rem;
   margin: 2.5rem;
+  flex-wrap: wrap;
 }
 .footer .box-container .box h3 {
   font-size: 2.5rem;
   color: #fff;
   padding-bottom: 1rem;
   font-weight: normal;
+  /* margin-left: -80px; */
 }
 .footer .box-container .box p {
   font-size: 1.5rem;
   color: #ccc;
   padding: 0.7rem 0;
+  margin-right: 10px;
   text-transform: none;
 }
 .footer .box-container .box p i {
@@ -1146,6 +1312,7 @@ section {
   color: rgb(238, 238, 238);
   padding: 0.3rem 0;
   display: block;
+  margin-right: 10px;
 }
 .footer .box-container .box a:hover {
   color: #ffae00;
@@ -1212,8 +1379,12 @@ section {
   .footer .box-container .box .share a {
     padding: 1.2rem;
   }
-}
-/* footer section ends *//* common media queries starts*/
+} 
+/* footer section ends */
+
+
+
+/* common media queries starts*/
 @media (max-width: 450px) {
   html {
     font-size: 55%;
