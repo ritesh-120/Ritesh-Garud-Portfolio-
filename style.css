@@ -310,6 +310,9 @@ header {
   
   /* hero media queries starts*/
   @media (max-width: 450px) {
+    .home{
+      margin-top: 20px;
+    }
     .home .btn {
       margin: 4rem 0;
     }
