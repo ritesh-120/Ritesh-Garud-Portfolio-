@@ -268,7 +268,7 @@
             <img src="./images/front-end2.jpg" alt="">
             <h2>Front-End Projects</h2>
             <p>It includes Projects on <br>HTML, CSS and JavaScript</p>
-            <a href="#" class="btn"><span>View</span>
+            <a href="./Projects-Page/index.html" class="btn"><span>View</span>
                 <i class="fas fa-arrow-circle-right"></i>
             </a>
         </div>
@@ -417,24 +417,7 @@ function opentab(tabname){
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 
-<script>
-    const scriptURL = 'https://docs.google.com/spreadsheets/d/1N4iPa3ljqiuvLruyWDhqD2DL_hD0-5qRMVmskN5ZVYE/edit?usp=sharing'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message Sent Successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+
 
 <!-- vanilla tilt.js links -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
