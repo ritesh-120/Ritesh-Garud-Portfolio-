@@ -1053,7 +1053,7 @@ font-size: 17px;
     color: #0e2431;
   }
   .heading{
-    font-size: 17px;
+    font-size: 21px;
     width: auto;
     height: auto;
   }
@@ -1069,23 +1069,28 @@ font-size: 17px;
     margin-top: 40px;
   }
   .box .box1{
-    height: 330px;
-    width: 230px;
+    height: 360px;
+    width: 260px;
   }
   .box #box1{
     margin-left: 87px;
   }
   .box .box1 h2{
-    font-size: 19px;
+    font-size: 22px;
   }
   .box .box1 p{
-    font-size: 13px;
+    font-size: 15px;
     margin: 5px 8px;
   }
   .box .box1 .btn{
-    padding: 1.2rem 1.4rem;
+    padding: 1.7rem 1.7rem;
     font-weight: 500;
     margin-left: -40px;
+  }
+  .box .box1 .btn:hover {
+    background:  #dce1e2;
+    color: #0e2431;
+    padding: 1.7rem 1.9rem;
   }
 
 }
@@ -1241,7 +1246,7 @@ form .button-area {
   .contact {
     min-height: 70vh;
   }
-  .contact h2{
+  #contact h2{
     font-size: 28px;
   }
   form .form-group{
