@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Portfolio Filter</title>
+</head>
+<body>
+
+
+<!-- Navbar Starts -->
+<header>
+    
+    <a href="/" class="logo"> <img src="./images/Logo-1.png" alt="Logo"> <span>Ritesh</span></a>
+
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <ul>
+        <li><a class="active" href="/Ritesh-Garud-Portfolio-/index.html#home">Home</a></li>
+        <li><a href="/Ritesh-Garud-Portfolio-/index.html#about">About</a></li>
+        <li><a href="/Ritesh-Garud-Portfolio-/index.html#skills">Skills</a></li>
+        <li><a href="/Ritesh-Garud-Portfolio-/index.html#Education">Education</a></li>
+        <li><a href="/Ritesh-Garud-Portfolio-/index.html#work">Work</a></li>
+        <li><a href="/Ritesh-Garud-Portfolio-/index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- Navbar Ends -->
+
+
+<section class="portfolio" id="Portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="section-title text-center">
+                    <h1><i class="fas fa-graduation-cap"></i>My <span>Projects</span></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="filter-buttons">
+                    <ul id="filter-btns">
+                        <li class="active" data-target="all">All</li>
+                        <li data-target="Minor">Minor</li>
+                        <li data-target="Major">Major</li>
+                        <li data-target="Fashion">JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+            <div class="row">
+                <div class="portfolio-gallery">
+                    <div class="box1" data-id="Minor">
+                        <img src="./images/profile-card-project.png" alt="">
+                        <h2>Profile Card</h2>
+                        <p>This is a simple project for <br>creating a "Profile Card" using <br>HTML and CSS.</p>
+                        <div class="button">
+                            <a href="#" target=" " class="btn"><span>Demo</span>
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                            <a href="https://github.com/ritesh-120/Minor-Projects/tree/main/1.Profile-Card" target=" " class="btn"><span>Code</span>
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box1" data-id="Minor">
+                        <img src="./images/contact-us-form.png" alt="">
+                        <h2>Contact Us Form</h2>
+                        <p>This is a simple project for <br>creating a "Contact Us" form <br>using HTML and CSS.</p>
+                        <div class="button">
+                            <a href="#" target=" " class="btn"><span>Demo</span>
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                            <a href="#" target=" " class="btn"><span>Code</span>
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box1" data-id="Minor">
+                        <img src="./images/sign-up-page.png" alt="">
+                        <h2>Sign Up Page</h2>
+                        <p>This project provides a simple and stylish sign-up page created using HTML and CSS.</p>
+                        <div class="button">
+                            <a href="#" target=" " class="btn"><span>Demo</span>
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                            <a href="#" target=" " class="btn"><span>Code</span>
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box1" data-id="Major">
+                        <img src="./images/netflix.png" alt="">
+                        <h2>Netflix Website</h2>
+                        <p>In this project I have tried to make simple Netflix Website Clone using HTML and CSS.</p>
+                        <div class="button">
+                            <a href="#" class="btn"><span>Demo</span>
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                            <a href="https://github.com/ritesh-120/Major-Projects/tree/main/1.Netflix-Website-Clone" target=" " class="btn"><span>Code</span>
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box1" data-id="Major">
+                        <img src="./images/personal-portfolio.png"  alt="">
+                        <h2>Personal Portfolio</h2>
+                        <p>This is a design of Personal <br>portfolio using HTML, CSS <br>and JavaScript.</p>
+                        <div class="button">
+                            <a href="#" target=" " class="btn"><span>Demo</span>
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                            <a href="#" target=" " class="btn"><span>Code</span>
+                                <i class="fas fa-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="/Ritesh-Garud-Portfolio-/index.html#work" class="btn1"><span>Back</span>
+                <i class="fas fa-arrow-circle-left"></i>
+              </a>
+
+        </div>
+</section>
+
+<!-- scroll top btn -->
+<a href="#Portfolio" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+
+<!-- Script start -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="javascript.js"></script>
+
+<!-- Script End -->
+
+     
+</body>
+</html>
